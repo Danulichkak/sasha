@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>ДЗ№7 форма 1</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <form action="/signup" method="POST">
+        <div class="field">
+          <label>Твое имя</label>
+          <input type="text" name="first_name">
+        </div>
+        <div  class="field">
+          <label>Твой Email</label>
+          <input type="email" name="email">
+        </div>
+        <div class="field">
+          <label>Дата рождения</label>
+          <input type="date" name="date" id="">
+        </div>
+        <div  class="field">
+          <label>Тема сообщения</label>
+          <select name="mail">
+                <option></option>
+            <option>Нет строки пароля</option>
+            <option>Нет строки фамилия</option>
+            <option>Проверка счета</option>
+            <option>не загружается фото</option>
+            <option>Просто скучно</option>
+          </select>
+        </div>
+        <div class="field">
+            <label>Текст*:</label> 
+            <textarea cols="40" rows="10" name="textarea" ></textarea>
+        </div>    
+        <div class="field">   
+            <label>Защита от спама*</label>
+            <input class="pass" type="password" name="password" />
+        </div>
+        <div  class="field">
+            <div class="img">
+              <img src="./777.jpg" alt="Сменить картинку">
+            </div>
+          <div class="img_text">
+            <a href="">сменить картинку</a>
+          </div>
+        </div>
+        <div  class="field">
+            <input class="login" type="submit" name="submit" value="Отправить" />
+        </div>
+      </form>
+</body>
+
+</html>
